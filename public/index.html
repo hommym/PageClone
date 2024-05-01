@@ -1,0 +1,1203 @@
+
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <link rel="icon" href="https://www.britishairways.com/favicon.ico" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+    </style>    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+      <meta name="ulp-version" content="1.17.170">
+    
+    
+    
+    <meta name="robots" content="noindex, nofollow">
+    
+    
+    <link rel="stylesheet" href="https://cdn.auth0.com/ulp/react-components/1.93.2/css/main.cdn.min.css">
+    <style id="custom-styles-container">
+      
+        
+
+
+
+
+        
+          :root, .af-custom-form-container .af-form {
+    --primary-color: #2e5c99;
+  }
+        
+      
+
+        
+          :root, .af-custom-form-container .af-form {
+    --button-font-color: #ffffff;
+  }
+        
+      
+
+        
+          :root {
+    --secondary-button-border-color: #c9cace;
+    --social-button-border-color: #c9cace;
+    --radio-button-border-color: #c9cace;
+  }
+        
+      
+
+        
+          :root {
+    --secondary-button-text-color: #1e212a;
+  }
+        
+      
+
+        
+          :root {
+    --link-color: #2e5c99;
+  }
+        
+      
+
+        
+          :root {
+    --title-font-color: #1e212a;
+  }
+        
+      
+
+        
+          :root {
+    --font-default-color: #1e212a;
+  }
+        
+      
+
+        
+          :root {
+    --widget-background-color: #ffffff;
+  }
+        
+      
+
+        
+          :root {
+    --box-border-color: #c9cace;
+  }
+        
+      
+
+        
+          :root {
+    --font-light-color: #65676e;
+  }
+        
+      
+
+        
+          :root {
+    --input-text-color: #000000;
+  }
+        
+      
+
+        
+          :root {
+    --input-border-color: #c9cace;
+    --border-default-color: #c9cace;
+  }
+        
+      
+
+        
+          :root {
+    --input-background-color: #ffffff;
+  }
+        
+      
+
+        
+          :root {
+    --icon-default-color: #65676e;
+  }
+        
+      
+
+        
+          :root {
+    --error-color: #cc0066;
+    --error-text-color: #ffffff;
+  }
+        
+      
+
+        
+          :root {
+    --success-color: #13a688;
+  }
+        
+      
+
+        
+          :root {
+    --base-focus-color: #2671d3;
+    --transparency-focus-color: rgba(38,113,211, 0.15);
+  }
+        
+      
+
+        
+          :root {
+    --base-hover-color: #2671d3;
+    --transparency-hover-color: rgba(38,113,211, var(--hover-transparency-value));
+  }
+        
+      
+
+        
+      
+
+
+
+
+        
+          @font-face {
+    font-family: 'ULP Custom';
+    font-style: normal;
+    font-weight: var(--font-default-weight);
+    src: local('ULP Custom'), url('https://ba-prod-ui-elements.identity.iagl.digital/assets/mylius-Modern-reg.woff') format('woff');
+  }
+
+  body {
+    --font-family: 'ULP Custom', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, sans-serif;
+  }
+        
+      
+
+        
+          html, :root, .af-custom-form-container .af-form {
+    font-size: 16px;
+    --default-font-size: 16px;
+  }
+        
+      
+
+        
+          body {
+    --title-font-size: 1.5rem;
+    --title-font-weight: var(--font-default-weight);
+  }
+        
+      
+
+        
+          .c9be17626 {
+    font-size: 1rem;
+    font-weight: var(--font-default-weight);
+  }
+        
+      
+
+        
+          .c65820a1e {
+    font-size: 1rem;
+    font-weight: var(--font-default-weight);
+  }
+  .ulp-passkey-benefit-heading {
+    font-size: 1.15rem;
+  }
+        
+      
+
+        
+          .cf5db97b0, .c1d2f521c {
+    font-size: 1rem;
+    font-weight: var(--font-default-weight);
+  }
+        
+      
+
+        
+          body {
+    --ulp-label-font-size: 1rem;
+    --ulp-label-font-weight: var(--font-default-weight);
+  }
+        
+      
+
+        
+          .ce140fab9, .c8ab37d93, [id^='ulp-container-'] a {
+    font-size: 1rem;
+    font-weight: var(--font-default-weight) !important;
+  }
+        
+      
+
+        
+          
+        
+      
+
+
+
+
+        
+          :root {
+    --button-border-width: 1px;
+    --social-button-border-width: 1px;
+    --radio-border-width: 1px;
+  }
+        
+      
+
+        
+          body {
+    --button-border-radius: 3px;
+    --radio-border-radius: 3px;
+  }
+        
+      
+
+        
+          :root {
+    --input-border-width: 1px;
+  }
+        
+      
+
+        
+          body {
+    --input-border-radius: 3px;
+  }
+        
+      
+
+        
+          :root {
+    --border-radius-outer: 5px;
+  }
+        
+      
+
+        
+          :root {
+    --box-border-width: 0px;
+  }
+        
+      
+
+        
+          body {
+    --shadow-component-outer: none;
+  }
+        
+      
+
+
+
+
+        
+          
+    body {
+      --logo-alignment: 0 auto;
+    }
+  
+        
+      
+
+        
+          
+    .c999bf4fb {
+      content: url('https://ba-prod-ui-elements.identity.iagl.digital/assets/logo-ba-no-text.svg');
+    }
+  
+        
+      
+
+        
+          body {
+    --logo-height: 32px;
+  }
+  .c999bf4fb {
+    height: var(--logo-height);
+  }
+  
+        
+      
+
+        
+          
+    body {
+      --header-alignment: left;
+    }
+  
+        
+      
+
+        
+          
+        
+      
+
+
+
+
+        
+          .c43a4a859 {
+    --page-background-alignment: center;
+  }
+        
+      
+
+        
+          body {
+    --page-background-color: #ffffff;
+  }
+        
+      
+
+        
+          
+        
+      
+
+
+
+
+      
+    </style>
+    <style>
+    /* By default, hide features for javascript-disabled browsing */
+    /* We use !important to override any css with higher specificity */
+    /* It is also overriden by the styles in <noscript> in the header file */
+    .no-js {
+      clip: rect(0 0 0 0);
+      clip-path: inset(50%);
+      height: 1px;
+      overflow: hidden;
+      position: absolute;
+      white-space: nowrap;
+      width: 1px;
+    }
+  </style>
+  <noscript>
+    <style>
+      /* We use !important to override the default for js enabled */
+      /* If the display should be other than block, it should be defined specifically here */
+      .js-required { display: none !important; }
+      .no-js {
+        clip: auto;
+        clip-path: none;
+        height: auto;
+        overflow: auto;
+        position: static;
+        white-space: normal;
+        width: var(--prompt-width);
+      }
+    </style>
+  </noscript>
+    
+<script type='text/javascript'>
+        // JavaScript variables for page title and error title
+        const pageTitle = "British Airways log in";
+        const errorTitle = "";
+        document.title = pageTitle || errorTitle;
+    </script>
+    <script
+      src="https://www.datadoghq-browser-agent.com/datadog-rum-v4.js"
+      type="text/javascript"
+      integrity="sha384-9oyF9riIJqSk6us89irlFOlMMa9tpXwNn02SgOkQw4kgHXqaj4tfuf/O7SFU6DKy"
+      crossorigin="anonymous"
+    ></script>
+    <script type='text/javascript'>
+      window.DD_RUM &&
+        window.DD_RUM.init({
+          applicationId: '677c48f4-dcc1-497c-974d-1756b8233150',
+          clientToken: 'pubb4ee03437cf608b4b8d1ca17bb957a08',
+          site: 'datadoghq.eu',
+          service: 'ba-prod',
+          sampleRate: 100,
+          trackInteractions: true,
+          defaultPrivacyLevel: 'mask-user-input',
+        });
+
+      window.DD_RUM && window.DD_RUM.startSessionReplayRecording();
+    </script>
+    <style>
+      body {
+            font-family: Mylius Modern,Open Sans,helvetica,arial,sans-serif!important;
+        }
+
+        * {
+            scrollbar-width: thin!important;
+            scrollbar-color: #2E5C99 #EAEFF5!important;
+        }
+
+        /* Works on Chrome, Edge, and Safari */
+        *::-webkit-scrollbar {
+            width: 10px!important;
+        }
+
+        *::-webkit-scrollbar-track {
+            background: #EAEFF5!important;
+        }
+
+        *::-webkit-scrollbar-thumb {
+            background-color: #2E5C99!important;
+            border-radius: 20px!important;
+            border: 3px solid #EAEFF5!important;
+        }
+
+        
+            .container {
+                display: flex;
+                width: 1024px;
+                margin: 0 auto;
+                align-items: start;
+            }
+
+            @media only screen and (max-width: 1024px) {
+                .container {
+                    width: calc(100% - 10%);
+                }
+            }
+
+            @media only screen and (max-width: 780px) {
+                .container {
+                    display: block;
+                }
+            }
+
+            .login-header {
+                padding: 32px 0;
+                margin-bottom: 90px;
+                border-bottom: 1px solid #EEEEEE;
+            }
+
+            .login-logo {
+                width: 196px;
+                height: 48px;
+                background-image: url(data:image/png;base64,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);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+            }
+
+            .login-title h3 {
+                font-size: 36px;
+                font-weight: 400;
+                line-height: 45px;
+                color: #021B41;
+                margin-bottom: 60px;
+            }
+
+            @media only screen and (max-width: 780px) {
+                .login-header {
+                    margin-bottom: 30px;
+                }
+                
+                .login-logo {
+                    margin: 0 auto;
+                }
+                
+                .login-title {
+                    text-align: left;
+                    padding: 0 40px;
+                }
+
+                .login-title h3 {
+                    font-size: 24px;
+                    font-weight: 400;
+                    line-height: 30px;
+                    text-align: center;
+                    margin-bottom: 30px;
+                }
+            }
+
+            .login-wrapper {
+                position: relative;
+                display: inline-flex;
+                width: 60%;
+                justify-items: start;
+            }
+
+            .login-wrapper .login {
+                display: block;
+                /* height: 305px; */
+                min-height: 305px;
+                justify-items: start;
+                padding: 0!important;
+            }
+
+            .login-wrapper .login header {
+                display: none;
+            }
+            
+            .login-wrapper section > div {
+                box-shadow: none!important;
+            }
+
+            .login-wrapper section > div > div {
+                display: block!important;
+            }
+
+            .login-wrapper div header + div {
+                padding: 0 4px!important;
+            }
+
+            .login-wrapper .ulp-alternate-action {
+                display: none;
+            }
+            
+            .signup-wrapper {
+                position: relative;
+                display: inline-flex;
+                align-items: center;
+                width: 39%;
+            }
+
+            .signup-cta {
+                max-width: 400px;
+                justify-content: center;
+                padding: 40px;
+                border-radius: 8px;
+                box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.15);
+            }
+            
+            .signup-wrapper h5 {
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 30px;
+                color: #021B41;
+                margin-bottom: 24px;
+            }
+            
+            .signup-wrapper p,
+            .signup-wrapper a {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                margin-bottom: 24px;
+            }
+
+            @media only screen and (max-width: 780px) {
+                .login-wrapper,
+                .signup-wrapper,
+                .login-wrapper .login,
+                .login-wrapper .login section {
+                    width: 100%;
+                }
+
+                .signup-wrapper {
+                    padding: 0 4px 20px!important;
+                }
+
+                .signup-cta {
+                    max-width: 100%;
+                }
+            }
+
+            @media only screen and (max-width: 600px) {
+                .signup-wrapper {
+                    padding: 0 var(--spacing-5) calc(var(--button-height) + var(--spacing-5))!important;
+                }
+            }
+
+            :root {
+                --prompt-min-height: 0px;
+            } 
+        
+
+        form .input-wrapper {
+            margin-top: 16px!important;
+            margin-bottom: 16px!important;
+        }
+
+        form .input-wrapper:last-of-type {
+            margin-bottom: 32px!important;
+        }
+
+        form label {
+            color: #000000!important;
+            text-transform: capitalize!important;
+        }
+
+        form input,
+        form .password {
+            border-radius: 8px!important;
+            border: 1px solid #CCC!important;
+        }
+
+        form input[name=password],
+        form input[name=password-reset],
+        form input[name=re-enter-password] {
+            border: none!important;
+        }
+
+        .input:focus,
+        div.password:focus-within {
+            border-color: #2671D3!important;
+            box-shadow: none!important;
+        }
+
+        .input:focus {
+          outline: 2px solid #2671D3!important;
+          outline-offset: 2px!important;
+        }
+
+        .input:focus[name=password],
+        .input:focus[name=password-reset],
+        .input:focus[name=re-enter-password] {
+          outline: 0!important;
+        }
+
+        div.password:focus-within {
+          outline: 2px solid #2671D3!important;
+          outline-offset: 2px!important;
+        }
+
+        .ulp-input-error-icon, [id^=ulp-container-] .ulp-field.ulp-error .ulp-error-info:before {
+            display: flex;
+            height: 24px!important;
+            width: 24px!important;
+            margin-right: 4px!important;
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAfCAIAAACktUByAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAxklEQVQoz+2RoYoCYRhFz/wIwzC7YBEN02yG2b5ms2/hC2j1BQTjPojZIC6zzTImgzaLWsRxkEH574ZftBhsFk/6OFwufFxPEnD8WwEfzToOSVmynNGZ0cmSpSRJBtj9TFzidhge8bavsEg6bw9prZfWeuftwe3muY0vuwwoVT5d9Gqf6i0BNi/2oxQot79M6F/t4ntwmq+BII4aaR+ssXnhFHCar21egDEm9IM4cjaII9fgSbJ5sRmOgWq3ZUIffpnev7nzD83ZZhXEDe4mAAAAAElFTkSuQmCC);
+            background-size: 4px;
+            background-position: center;
+        }
+
+        .ulp-input-error-message,
+        [id^=ulp-container-] .ulp-field.ulp-error .ulp-error-info {
+            color: #CC0066!important;
+            font-size: 16px!important;
+        }
+
+        input[aria-invalid=true],
+        .password:has(> input[aria-invalid=true]) {
+            border-color: #CC0066!important;
+        }
+
+        .input:autofill,
+        .input:-webkit-autofill {
+            border-color: #2671D3!important;
+        }
+
+        .ulp-captcha-container {
+            display: inline-block;
+        }
+
+        .ulp-hcaptcha {
+            transform: unset;
+            top: 0;
+            margin-left: 1px;
+            height: 76px;
+            border-radius: 4px;
+        }
+
+        @media (min-width: 381px) and (max-width: 500px) {
+            .ulp-captcha-container {
+                display: block;
+            }
+
+            .ulp-hcaptcha {
+                transform: scale(0.95);
+            }
+        }
+
+        @media (max-width: 380px) {
+            .ulp-captcha-container {
+                display: block;
+            }
+
+            .ulp-hcaptcha {
+                transform: scale(0.85);
+                max-width: 100%;
+                height: 72px;
+            }
+        }
+
+        
+
+        a {
+            color: #2E5C99;
+            font-weight: 400!important;
+            padding: 0 0 4px!important;
+            border-radius: 0!important;
+            border-bottom: 1px solid #2E5C99;
+        }
+
+        a:focus {
+            background-color: transparent!important;
+            color: #2E5C99!important;
+            outline: 2px solid #2671D3!important;
+            outline-offset: 2px;
+        }
+
+        a:hover {
+            color: #2671D3;
+            border-bottom: 1px solid #2671D3;
+        }
+
+        
+
+        
+
+        
+
+        
+
+        /* Global Buttons */
+        button[type=submit] {
+            font-size: 16px!important;
+            font-weight: 400!important;
+            border: 1px solid #2E5C99!important;
+            border-radius: 2px!important;
+            transition: none!important;
+        }
+
+        button[type=submit]:focus,
+        button[type=button]:focus,
+        button[data-action-button-secondary=true]:focus {
+            box-shadow: none!important;
+            outline: 2px solid #2671D3!important;
+            outline-offset: 2px!important;
+        }
+
+        button[type=submit]:hover,
+        button[type=submit]:focus button[data-action-button-secondary=true]:hover,
+        button[type=button]:hover {
+            background-color: #2671D3!important;
+            color: #FFFFFF!important;
+            border: 1px solid #2671D3!important;
+            box-shadow: none!important;
+        }
+
+        /* Primary Buttons */
+        button[type=submit],
+        button[value=re-send-email] {
+            background: #2E5C99!important;
+            color: #FFFFFF!important;
+        }
+
+        /* Secondary Buttons */
+        button[type=button],
+        button[data-action-button-secondary=true],
+        button[type=submit][value=decline],
+        button[type=submit][value=cancel],
+        button[type=submit][value=otpCodeAction],
+        button[type=submit][value=snooze-enrollment],
+        button[type=submit]._link-selection-action {
+            background: #FFFFFF!important;
+            color: #2E5C99!important;
+        }
+
+        button[type=submit][value=decline]:hover,
+        button[type=submit][value=cancel]:hover,
+        button[type=submit][value=otpCodeAction]:hover,
+        button[type=submit][value=snooze-enrollment]:hover,
+        button[type=submit]._link-selection-action:hover {
+            background-color: #2671D3!important;
+            color: #FFFFFF!important;
+        }
+
+        button[type=button][data-action=toggle] {
+            background: #FFFFFF!important;
+            border: 0;
+            border-top-right-radius: 8px!important;
+            border-bottom-right-radius: 8px!important;
+        }
+
+        button[type=button][data-action=toggle].ulp-button-icon._button-icon:focus {
+            border: 0!important;
+            background: #FFFFFF!important;
+            outline: 2px solid #2671D3!important;
+            outline-offset: 2px;
+            box-shadow: 0px 0px 0px 1px #2671D3!important;
+        }
+
+        button[type=button][data-action=toggle]:hover,
+        button[type=button][data-action=toggle]:active {
+            background: #EAEFF5!important;
+            border: 0!important;
+            box-shadow: 0px 0px 0px 1px #2671D3!important;
+        }
+
+        button.ulp-button-icon._button-icon[type=button][data-action=toggle]:active {
+            box-shadow: 0px 0px 0px 1px #2671D3!important;
+        }
+
+        button[type=button][data-action=toggle].ulp-button-icon._button-icon:hover:focus {
+            background: #EAEFF5!important;
+        }
+
+        button[type=button][data-action=toggle]:focus span.password {
+            background-color: #2E5C99!important;
+            border: 0;
+        }
+
+        button[type=button][data-action=toggle]:hover span.password {
+            background-color: #2E5C99!important;
+        }
+
+        /* Text Buttons */
+        button[type=submit][value=back-to-login],
+        button[type=submit][value=resend-code],
+        button[type=submit][value=resend-sms],
+        button[type=submit][value=resend-sms-sms],
+        button[type=submit][value=resend-voice],
+        button[type=submit][value=toggle-view],
+        button[type=submit][value=pick-authenticator],
+        button[type=submit][value=pick-authenticators],
+        button[type=submit][value=refuse-add-device] {
+            background-color: #FFFFFF!important;
+            color: #2E5C99!important;
+            font-weight: 400!important;
+            padding: 0 0 4px!important;
+            border-radius: 0!important;
+            border: 0!important;
+            border-bottom: 1px solid #2E5C99!important;
+        }
+
+        button[type=submit][value=back-to-login]:focus,
+        button[type=submit][value=resend-code]:focus,
+        button[type=submit][value=resend-sms]:focus,
+        button[type=submit][value=resend-sms-sms]:focus,
+        button[type=submit][value=resend-voice]:focus
+        button[type=submit][value=toggle-view]:focus,
+        button[type=submit][value=pick-authenticator]:focus,
+        button[type=submit][value=pick-authenticators]:focus,
+        button[type=submit][value=refuse-add-device]:focus {
+            background-color: #FFFFFF!important;
+            color: #2E5C99!important;
+            outline: 2px solid #2671D3!important;
+            outline-offset: 2px;
+        }
+
+        button[type=submit][value=back-to-login]:hover,
+        button[type=submit][value=resend-code]:hover,
+        button[type=submit][value=resend-sms]:hover,
+        button[type=submit][value=resend-sms-sms]:hover,
+        button[type=submit][value=resend-voice]:hover,
+        button[type=submit][value=toggle-view]:hover,
+        button[type=submit][value=pick-authenticator]:hover,
+        button[type=submit][value=pick-authenticators]:hover,
+        button[type=submit][value=refuse-add-device]:hover {
+            background-color: #FFFFFF!important;
+            color: #2671D3!important;
+            border: 0!important;
+            border-bottom: 1px solid #2671D3!important;
+        }
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        .password-icon-tooltip {
+            z-index: var(--z-index-base);
+        }
+    </style>
+  </head>
+
+  <body class="_widget-auto-layout">
+    
+    <div class="login-header">
+      <div class="container">
+        <div class="login-logo"></div>
+      </div>
+    </div>
+    <div class="login-title">
+      <div class="container">
+        <h3>Login to your British Airways account</h3>
+      </div>
+    </div>
+    <div class="container">
+      <div class="login-wrapper"><main class="_widget login">
+  <section class="cdadc4550 _prompt-box-outer c03535b13">
+    <div class="c259e58ea cdd942fae">
+      
+    
+      <div class="cc6eddcfc">
+        <header class="ce6291491 ce5cee375">
+          <div title="British Airways logo" id="custom-prompt-logo" style="width: auto !important; height: 60px !important; position: static !important; margin: auto !important; padding: 0 !important; background-color: transparent !important; background-position: center !important; background-size: contain !important; background-repeat: no-repeat !important"></div>
+        
+          <img class="c999bf4fb c6e235fd4" id="prompt-logo-center" src="https://ba-prod-ui-elements.identity.iagl.digital/assets/logo-ba-no-text.svg" alt="British Airways logo">
+        
+          
+            <h1 class="ca1d78d4b cc3effa88">Log in to your British Airways account</h1>
+          
+        
+          <div class="c9be17626 c5936cea9">
+            
+              <p class="cee61ed52 cb83ade35"> </p>
+            
+          </div>
+        </header>
+      
+        <div class="c65820a1e c9e1e25c6">
+          
+        
+          
+            
+              <form method="POST" class="c0985820c c570c7ec7" data-form-primary="true">
+                <input type="hidden" name="state" value="hKFo2SBWRjNhaFVodjN6WHk1bWVpd1QxM0ZDODFzSWxXWkMyb6Fur3VuaXZlcnNhbC1sb2dpbqN0aWTZIE92aFB4ZGVpY1AtTTctQjdCX2prelNIWlZLb2c0MjVGo2NpZNkgdmtsUlN3R2RaTERRZlJ3QW50aFdrSnF0emRiUHI0bnI">
+              
+                
+              
+                
+              
+                <div class="c7a04149d c72d90afe">
+                  <div class="c043e0f82">
+                    
+                  
+                    
+                      
+                        <div class="input-wrapper _input-wrapper">
+                          <div class="c83704c9d cdb8200b2 text c489561e1" data-action-text="" data-alternate-action-text="">
+                            <label class="ce1eb4199 no-js cbbe3c895 c04f78d1e" for="username">
+                              Email/ Username/ Membership No.*
+                            </label>
+                          
+                            <input class="input cf0610cfd c8be80ecd" inputMode="text" name="username" id="username" type="text" value="" required autoComplete="username" autoCapitalize="none" spellCheck="false" autoFocus>
+                          
+                            <div class="ce1eb4199 js-required cbbe3c895 c04f78d1e" data-dynamic-label-for="username" aria-hidden="true">
+                              Email/ Username/ Membership No.*
+                            </div>
+                          </div>
+                        
+                          
+                        </div>
+                      
+                    
+                  
+                    
+                      <div class="input-wrapper _input-wrapper">
+                        <div class="c83704c9d cdb8200b2 password c44bee98e" data-action-text="" data-alternate-action-text="">
+                          <label class="ce1eb4199 no-js cbbe3c895 c897cebbe" for="password">
+                            Password*
+                          </label>
+                        
+                          <input class="input cf0610cfd ce7c5b3ad" name="password" id="password" type="password" required autoComplete="current-password" autoCapitalize="none" spellCheck="false">
+                        
+                          <div class="ce1eb4199 js-required cbbe3c895 c897cebbe" data-dynamic-label-for="password" aria-hidden="true">
+                            Password*
+                          </div>
+                        
+                          
+                            <button type="button" class="cf5db97b0 ulp-button-icon c0829e180 _button-icon" data-action="toggle">
+                              <span aria-hidden="true" class="password-icon-tooltip show-password-tooltip">Show password</span>
+                            
+                              <span aria-hidden="true" class="password-icon-tooltip hide-password-tooltip hide">Hide password</span>
+                            
+                              <span class="screen-reader-only password-toggle-label" data-label="show-password">Show password</span>
+                            
+                              <span class="screen-reader-only password-toggle-label hide" data-label="hide-password">Hide password</span>
+                            
+                              <span class="ceb1ce1c0 password js-required" aria-hidden="true"></span>
+                            </button>
+                          
+                        </div>
+                      
+                        
+                      </div>
+                    
+                  
+                    
+                      
+                        <div data-captcha-provider="hcaptcha" data-captcha-sitekey="4d2f4c72-52aa-49f1-8838-fd0f962d0c10" data-captcha-lang="en" class="ulp-captcha-container">
+                          
+                            
+                              <div class="ulp-hcaptcha ulp-captcha" id="ulp-hcaptcha"></div>
+                            
+                          
+                        
+                          
+                            <input type="hidden" name="captcha" value="">
+                          
+                        </div>
+                      
+                    
+                  </div>
+                </div>
+              
+                
+                  
+                    <p class="c9276432f cd4f87083">
+                      
+                        <a class="c8ab37d93 c534c52f1 c58e794fd" href="/u/login/password-reset-start/BA-Profiles?state=hKFo2SBWRjNhaFVodjN6WHk1bWVpd1QxM0ZDODFzSWxXWkMyb6Fur3VuaXZlcnNhbC1sb2dpbqN0aWTZIE92aFB4ZGVpY1AtTTctQjdCX2prelNIWlZLb2c0MjVGo2NpZNkgdmtsUlN3R2RaTERRZlJ3QW50aFdrSnF0emRiUHI0bnI">Forgot password?</a>
+                      
+                    </p>
+                  
+                
+              
+                
+              
+                <div class="c70cccc7a">
+                  
+                    <button type="submit" name="action" value="default" class="cf5db97b0 c78a714a2 c0829e180 c9082a08e c1982299d" data-action-button-primary="true">Continue</button>
+                  
+                </div>
+              </form>
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        </div>
+      </div>
+    </div>
+  
+    
+  </section>
+</main>
+<script id="client-scripts">
+window.ulpFlags = {"enable_ulp_wcag_compliance":false};!function(){var e,t,n,r,E,y,S,C,F,A,a,i={exports:function(e,t){return"object"==typeof e.ulpFlags&&null!==e.ulpFlags?e.ulpFlags:{}}}.exports(window,document),o=((e={}).exports=function(n,a){var r={};function c(e,t){if(e.classList)return e.classList.add(t);var n=e.className.split(" ");-1===n.indexOf(t)&&(n.push(t),e.className=n.join(" "))}function i(e,t,n,r){return e.addEventListener(t,n,r)}function o(e){return"string"==typeof e}function u(e,t){return o(e)?a.querySelector(e):e.querySelector(t)}function l(e,t){if(e.classList)return e.classList.remove(t);var n=e.className.split(" "),r=n.indexOf(t);-1!==r&&(n.splice(r,1),e.className=n.join(" "))}function s(e,t){return e.getAttribute(t)}function f(e,t,n){return e.setAttribute(t,n)}var e=["text","number","email","password","tel","url"],t="select,textarea,"+e.map(function(e){return'input[type="'+e+'"]'}).join(",");return{addClass:c,toggleClass:function(e,t,n){if(!0===n||!1===n)return r=e,a=t,!0!==n?l(r,a):c(r,a);var r,a;if(e.classList)return e.classList.toggle(t);var i=e.className.split(" "),o=i.indexOf(t);-1!==o?i.splice(o,1):i.push(t),e.className=i.join(" ")},hasClass:function(e,t){return e.classList?e.classList.contains(t):-1!==e.className.split(" ").indexOf(t)},addClickListener:function(e,t){return i(e,"click",t)},addEventListener:i,getAttribute:s,hasAttribute:function(e,t){return e.hasAttribute(t)},getElementById:function(e){return a.getElementById(e)},getParent:function(e){return e.parentNode},isString:o,loadScript:function(e,t){var n=a.createElement("script");for(var r in t)r.startsWith("data-")?n.dataset[r.replace("data-","")]=t[r]:n[r]=t[r];n.src=e,a.body.appendChild(n)},removeScript:function(e){a.querySelectorAll('script[src="'+e+'"]').forEach(function(e){e.remove()})},poll:function(e){var i=e.interval||2e3,t=e.url||n.location.href,o=e.condition||function(){return!0},c=e.onSuccess||function(){},u=e.onError||function(){};return setTimeout(function r(){var a=new XMLHttpRequest;return a.open("GET",t),a.setRequestHeader("Accept","application/json"),a.onload=function(){if(200===a.status){var e="application/json"===a.getResponseHeader("Content-Type").split(";")[0]?JSON.parse(a.responseText):a.responseText;return o(e)?c():setTimeout(r,i)}if(429!==a.status)return u({status:a.status,responseText:a.responseText});var t=1e3*Number.parseInt(a.getResponseHeader("X-RateLimit-Reset")),n=t-(new Date).getTime();return setTimeout(r,i<n?n:i)},a.send()},i)},querySelector:u,querySelectorAll:function(e,t){var n=o(e)?a.querySelectorAll(e):e.querySelectorAll(t);return Array.prototype.slice.call(n)},removeClass:l,removeElement:function(e){return e.remove()},setAttribute:f,removeAttribute:function(e,t){return e.removeAttribute(t)},swapAttributes:function(e,t,n){var r=s(e,t),a=s(e,n);f(e,n,r),f(e,t,a)},setGlobalFlag:function(e,t){r[e]=!!t},getGlobalFlag:function(e){return!!r[e]},preventFormSubmit:function(e){e.stopPropagation(),e.preventDefault()},matchMedia:function(e){return"function"!=typeof n.matchMedia&&n.matchMedia(e).matches},dispatchEvent:function(e,t,n){var r;"function"!=typeof Event?(r=a.createEvent("Event")).initCustomEvent(t,n,!1):r=new Event(t,{bubbles:n}),e.dispatchEvent(r)},timeoutPromise:function(e,a){return new Promise(function(t,n){var r=setTimeout(function(){n(new Error("timeoutPromise: promise timed out"))},e);a.then(function(e){clearTimeout(r),t(e)},function(e){clearTimeout(r),n(e)})})},createMutationObserver:function(e){return"undefined"==typeof MutationObserver?null:new MutationObserver(e)},consoleWarn:function(){(console.warn||console.log).apply(console,arguments)},getConfigJson:function(e){try{var t=u(e);if(!t)return null;var n=t.value;return n?JSON.parse(n):null}catch(e){return null}},getCSSVariable:function(e){return getComputedStyle(a.documentElement).getPropertyValue(e)},setTimeout:setTimeout,globalWindow:n,SUPPORTED_INPUT_TYPES:e,ELEMENT_TYPE_SELECTOR:t,RUN_INIT:!0}},e.exports)(window,document),c=function(){var e={};function v(e){if(!("string"==typeof e||e instanceof String)){var t=typeof e;throw null===e?t="null":"object"===t&&(t=e.constructor.name),new TypeError("Expected a string but received a "+t)}}function m(e,t){var n,r;v(e),r="object"==typeof t?(n=t.min||0,t.max):(n=t,arguments[2]);var a=encodeURI(e).split(/%..|./).length-1;return n<=a&&(void 0===r||a<=r)}function h(e,t){for(var n in void 0===e&&(e={}),t)void 0===e[n]&&(e[n]=t[n]);return e}var g={require_tld:!0,allow_underscores:!1,allow_trailing_dot:!1,allow_numeric_tld:!1,allow_wildcard:!1,ignore_max_length:!1},t="(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])",n="("+t+"[.]){3}"+t,r=new RegExp("^"+n+"$"),a="(?:[0-9a-fA-F]{1,4})",i=new RegExp("^((?:"+a+":){7}(?:"+a+"|:)|(?:"+a+":){6}(?:"+n+"|:"+a+"|:)|(?:"+a+":){5}(?::"+n+"|(:"+a+"){1,2}|:)|(?:"+a+":){4}(?:(:"+a+"){0,1}:"+n+"|(:"+a+"){1,3}|:)|(?:"+a+":){3}(?:(:"+a+"){0,2}:"+n+"|(:"+a+"){1,4}|:)|(?:"+a+":){2}(?:(:"+a+"){0,3}:"+n+"|(:"+a+"){1,5}|:)|(?:"+a+":){1}(?:(:"+a+"){0,4}:"+n+"|(:"+a+"){1,6}|:)|(?::((?::"+a+"){0,5}:"+n+"|(?::"+a+"){1,7}|:)))(%[0-9a-zA-Z-.:]{1,})?$");function b(e,t){return void 0===t&&(t=""),v(e),(t=String(t))?"4"===t?r.test(e):"6"===t&&i.test(e):b(e,4)||b(e,6)}var _={allow_display_name:!1,allow_underscores:!1,require_display_name:!1,allow_utf8_local_part:!0,require_tld:!0,blacklisted_chars:"",ignore_max_length:!1,host_blacklist:[],host_whitelist:[]},w=/^([^\x00-\x1F\x7F-\x9F\cX]+)</i,x=/^[a-z\d!#\$%&'\*\+\-\/=\?\^_`{\|}~]+$/i,E=/^[a-z\d]+$/,y=/^([\s\x01-\x08\x0b\x0c\x0e-\x1f\x7f\x21\x23-\x5b\x5d-\x7e]|(\\[\x01-\x09\x0b\x0c\x0d-\x7f]))*$/i,S=/^[a-z\d!#\$%&'\*\+\-\/=\?\^_`{\|}~\u00A1-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+$/i,C=/^([\s\x01-\x08\x0b\x0c\x0e-\x1f\x7f\x21\x23-\x5b\x5d-\x7e\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|(\\[\x01-\x09\x0b\x0c\x0d-\x7f\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))*$/i,F=254;function o(e,t){if(v(e),(t=h(t,_)).require_display_name||t.allow_display_name){var n=e.match(w);if(n){var r=n[1];if(e=e.replace(r,"").replace(/(^<|>$)/g,""),r.endsWith(" ")&&(r=r.slice(0,-1)),!function(e){var t=e.replace(/^"(.+)"$/,"$1");if(!t.trim())return!1;if(/[\.";<>]/.test(t)){if(t===e)return!1;if(t.split('"').length!==t.split('\\"').length)return!1}return!0}(r))return!1}else if(t.require_display_name)return!1}if(!t.ignore_max_length&&e.length>F)return!1;var a=e.split("@"),i=a.pop(),o=i.toLowerCase();if(t.host_blacklist.includes(o))return!1;if(0<t.host_whitelist.length&&!t.host_whitelist.includes(o))return!1;var c=a.join("@");if(t.domain_specific_validation&&("gmail.com"===o||"googlemail.com"===o)){var u=(c=c.toLowerCase()).split("+")[0];if(!m(u.replace(/\./g,""),{min:6,max:30}))return!1;for(var l=u.split("."),s=0;s<l.length;s++)if(!E.test(l[s]))return!1}if(!(!1!==t.ignore_max_length||m(c,{max:64})&&m(i,{max:254})))return!1;if(!function(e,t){v(e),(t=h(t,g)).allow_trailing_dot&&"."===e[e.length-1]&&(e=e.substring(0,e.length-1)),!0===t.allow_wildcard&&0===e.indexOf("*.")&&(e=e.substring(2));var n=e.split("."),r=n[n.length-1];if(t.require_tld){if(n.length<2)return!1;if(!t.allow_numeric_tld&&!/^([a-z\u00A1-\u00A8\u00AA-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]{2,}|xn[a-z0-9-]{2,})$/i.test(r))return!1;if(/\s/.test(r))return!1}return!(!t.allow_numeric_tld&&/^\d+$/.test(r))&&n.every(function(e){return!(63<e.length&&!t.ignore_max_length||!/^[a-z_\u00a1-\uffff0-9-]+$/i.test(e)||/[\uff01-\uff5e]/.test(e)||/^-|-$/.test(e)||!t.allow_underscores&&/_/.test(e))})}(i,{require_tld:t.require_tld,ignore_max_length:t.ignore_max_length,allow_underscores:t.allow_underscores})){if(!t.allow_ip_domain)return!1;if(!b(i)){if(!i.startsWith("[")||!i.endsWith("]"))return!1;var f=i.slice(1,-1);if(0===f.length||!b(f))return!1}}if('"'===c[0])return c=c.slice(1,c.length-1),t.allow_utf8_local_part?C.test(c):y.test(c);for(var d=t.allow_utf8_local_part?S:x,p=(l=c.split("."),0);p<l.length;p++)if(!d.test(l[p]))return!1;return!t.blacklisted_chars||-1===c.search(new RegExp("["+t.blacklisted_chars+"]+","g"))}return e.exports=function(e,t){return{ulpRequiredFunction:function(e,t){return!t||!!e.value},ulpEmailValidationFunction:function(e,t){return!t||!!o(e.value)}}},e.exports}()(window,document);((t={}).exports=function(r,e,o,c,u,l,s,f,t){function d(e){"Escape"==e.c2c2f9797&&document.activeElement.blur()}t.enable_ulp_wcag_compliance&&e("div.c83704c9d.password").forEach(function(e){var a,i,t=r(e,"input"),n=r(e,'[data-action="toggle"]');o(e,(a=t,i=n,function(e){if(e.target.classList.contains("ulp-button-icon")){if(a.type="password"===a.type?"text":"password",i){i.ariaChecked="false"===i.ariaChecked?"true":"false";var t=i.querySelector(".show-password-tooltip"),n=i.querySelector(".hide-password-tooltip");t&&s(t,"hide"),n&&s(n,"hide")}var r=f(a);"text"===a.type?u(r,"show"):l(r,"show")}})),c(n,"keyup",d)})},t.exports)(o.querySelector,o.querySelectorAll,o.addClickListener,o.addEventListener,o.addClass,o.removeClass,o.toggleClass,o.getParent,i),((n={}).exports=function(r,e,o,c,u,l,s,t){t.enable_ulp_wcag_compliance||e("div.c83704c9d.password").forEach(function(e){var a,i,t=r(e,"input"),n=r(e,'[data-action="toggle"]');o(e,(a=t,i=n,function(e){if(e.target.classList.contains("ulp-button-icon")){if(a.type="password"===a.type?"text":"password",i){var t=i.querySelector(".show-password-tooltip"),n=i.querySelector(".hide-password-tooltip");t&&l(t,"hide"),n&&l(n,"hide")}var r=s(a);"text"===a.type?c(r,"show"):u(r,"show")}}))})},n.exports)(o.querySelector,o.querySelectorAll,o.addClickListener,o.addClass,o.removeClass,o.toggleClass,o.getParent,i),{exports:function(e,r,a,t){var n=e(".c6cc64bf0"),i=e("#alert-trigger"),o=e(".caf29f221"),c=e(".cfd5d676a"),u=!1;i&&c&&n&&t(n,function(e){var t=e.target===i,n=c.contains(e.target);return t&&!u?(r(o,"show"),void(u=!0)):t&&u||u&&!n?(a(o,"show"),void(u=!1)):void 0})}}.exports(o.querySelector,o.addClass,o.removeClass,o.addClickListener),(E="recaptcha_v2",y="recaptcha_enterprise",S="hcaptcha",C="friendly_captcha",F="arkose",A="auth0_v2",(r={}).exports=function(i,o,a,c,u,l){var s=500,f=3,d=0,p=a("div[data-captcha-sitekey]"),t=a("div[data-captcha-sitekey] input");function v(){switch(g()){case E:return window.grecaptcha;case y:return window.grecaptcha.enterprise;case S:return window.hcaptcha;case C:return window.friendlyChallenge;case F:return window.arkose;case A:return window.turnstile}}function m(){return a(function(){switch(g()){case E:case y:return"#ulp-recaptcha";case S:return"#ulp-hcaptcha";case C:return"#ulp-friendly-captcha";case F:return"#ulp-arkose";case A:return"#ulp-auth0-v2-captcha"}}())}function h(){return p.getAttribute("data-captcha-lang")}function g(){return p.getAttribute("data-captcha-provider")}function b(){return p.getAttribute("data-captcha-sitekey")}function _(){return a('form[data-form-primary="true"]')}function w(e){return t.value=e}function x(){var e=v(),t=l("--ulp-captcha-widget-theme")||"light";if(g()===C){"dark"===t&&c(a(".frc-captcha"),"dark");var n=new e.WidgetInstance(m(),{sitekey:b(),language:h(),doneCallback:function(e){w(e)}})}else{var r={sitekey:b(),theme:t,"expired-callback":function(){w(""),c(p,"c0b1e4bab"),e.reset(n)},callback:function(e){w(e),u(p,"c0b1e4bab")}};g()===A&&(r.language=h(),r.retry="never",r["response-field"]=!1,r["error-callback"]=function(e){return fetch("https://www.cloudflarestatus.com/api/v2/summary.json").then(function(e){return e.json()}).then(function(e){for(var t=0;t<e.components.length;t++){var n=e.components[t];if("Turnstile"===n.name)return"operational"===n.status}return!1}).catch(function(e){return!1}).then(function(e){e&&d<f?(w(""),c(p,"c0b1e4bab"),v().reset(n),d++):(w("BYPASS_CAPTCHA"),u(p,"c0b1e4bab"))}),!0}),n=e.render(m(),r)}}p&&function(){var e="captchaCallback_"+Math.floor(1000001*Math.random()),t=g(),n={async:!0,defer:!0},r=function(e,t,n,r){switch(g()){case E:return"https://www.recaptcha.net/recaptcha/api.js?render=explicit&hl="+e+"&onload="+t;case y:return"https://www.recaptcha.net/recaptcha/enterprise.js?render=explicit&hl="+e+"&onload="+t;case S:return"https://js.hcaptcha.com/1/api.js?render=explicit&hl="+e+"&onload="+t;case C:return"https://cdn.jsdelivr.net/npm/friendly-challenge@0.9.14/widget.min.js";case F:return"https://"+n+".arkoselabs.com/v2/"+r+"/api.js";case A:return"https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload="+t}}(h(),e,p.getAttribute("data-captcha-client-subdomain"),b());if(t===F||t===A){n["data-callback"]=e,n.onerror=function(){if(d<f)return o(r),i(r,n),void d++;o(r),w("BYPASS_CAPTCHA")};var a=function(e){var t,n;t=e,n=function(e){setTimeout(function(){t.run()},s),e.preventDefault()},_().addEventListener("submit",n),t.setConfig({onCompleted:function(e){w(e.token),_().submit()},onError:function(e){return fetch("https://status.arkoselabs.com/api/v2/status.json").then(function(e){return e.json()}).then(function(e){var t=e.status.indicator;return"none"===t}).catch(function(e){return!1}).then(function(e){if(e&&d<f)return t.reset(),new Promise(function(e){setTimeout(function(){e(t.run())},s),d++});w("BYPASS_CAPTCHA"),_().removeEventListener("submit",n)})}})};t===A&&(a=function(){x()}),window[e]=a}else window[e]=function(){delete window[e],x()},t===C&&(c(m(),"frc-captcha"),n.onload=window[e]);i(r,n)}()},r.exports)(o.loadScript,o.removeScript,o.querySelector,o.addClass,o.removeClass,o.getCSSVariable),((a={}).exports=function(r,e,a,i,o,c,u,l,n,s,t){if(!t.enable_ulp_wcag_compliance){if(r("body._simple-labels"))return e(".ce1eb4199.no-js").forEach(function(e){o(e,"no-js")}),void e(".ce1eb4199.js-required").forEach(function(e){i(e,"hide")});e(".c83704c9d:not(.c5fb7e0e7):not(disabled)").forEach(function(e){i(e,"c99525b9c");var t,n=r(e,".input");n.value&&i(e,"c7fcc872d"),a(e,"change",f),a(n,"blur",f),a(n,"animationstart",d),t=n,u(function(){t.value&&l(t,"change",!0)},100)})}function f(e){var t=e.target,n=c(t);t.value||s(t,"data-autofilled")?i(n,"c7fcc872d"):o(n,"c7fcc872d")}function d(e){var t=e.target;"onAutoFillStart"===e.animationName&&(n(t,"data-autofilled",!0),l(e.target,"change",!0),a(t,"keyup",p,{once:!0}))}function p(e){var t=e.target;n(t,"data-autofilled","")}},a.exports)(o.querySelector,o.querySelectorAll,o.addEventListener,o.addClass,o.removeClass,o.getParent,o.setTimeout,o.dispatchEvent,o.setAttribute,o.getAttribute,i),{exports:function(e,t,n,r,a,i){function o(e){var t=n("submitted");r("submitted",!0),t?a(e):"apple"===i(e.target,"data-provider")&&setTimeout(function(){r("submitted",!1)},2e3)}var c=e("form");c&&c.forEach(function(e){t(e,"submit",o)})}}.exports(o.querySelectorAll,o.addEventListener,o.getGlobalFlag,o.setGlobalFlag,o.preventFormSubmit,o.getAttribute),{exports:function(n,e,r,a,i,o,c,u,l,t,s,f){if(f.enable_ulp_wcag_compliance){var d=e("[id^='ulp-container-']");if(d&&d.length){var p=t(x);if(p)for(var v=0;v<d.length;v++)p.observe(d[v],{childList:!0,subtree:!0})}x()}function m(e){var t=e.target,n=o(t);t.value||u(t,"data-autofilled")?a(n,"c7fcc872d"):i(n,"c7fcc872d")}function h(e){var t=e.target,n=o(t);a(n,"focus"),w(t,n)}function g(e){var t=e.target,n=o(t);i(n,"focus"),m(e),w(t,n)}function b(e){var t=e.target;l(t,"data-autofilled","")}function _(e){var t=e.target;"onAutoFillStart"===e.animationName&&(l(t,"data-autofilled",!0),dispatchEvent(e.target,"change",!0),r(t,"keyup",b,{once:!0}))}function w(e,t){e.value?a(t,"c7fcc872d"):i(t,"c7fcc872d")}function x(){e(".ulp-field").forEach(function(e){if(!c(e,"c99525b9c")){var t=n(e,s);t&&(a(e,"c99525b9c"),w(t,e),setTimeout(function(){w(t,e)},50),t===document.activeElement&&a(e,"focus"),r(t,"change",m),r(t,"focus",h),r(t,"blur",g),r(t,"animationstart",_))}})}}}.exports(o.querySelector,o.querySelectorAll,o.addEventListener,o.addClass,o.removeClass,o.getParent,o.hasClass,o.getAttribute,o.setAttribute,o.createMutationObserver,o.ELEMENT_TYPE_SELECTOR,i),{exports:function(n,e,r,a,i,o,c,t,u,l){if(!l.enable_ulp_wcag_compliance){var s=e("[id^='ulp-container-']");if(s&&s.length){var f=t(g);if(f)for(var d=0;d<s.length;d++)f.observe(s[d],{childList:!0,subtree:!0});g()}}function p(e){var t=e.target,n=o(t);t.value?a(n,"c7fcc872d"):i(n,"c7fcc872d")}function v(e){var t=e.target,n=o(t);a(n,"focus"),h(t,n)}function m(e){var t=e.target,n=o(t);i(n,"focus"),h(t,n)}function h(e,t){e.value?a(t,"c7fcc872d"):i(t,"c7fcc872d")}function g(){e("[id^='ulp-container-'] .ulp-field").forEach(function(e){if(!c(e,"c99525b9c")){var t=n(e,u);t&&(a(e,"c99525b9c"),h(t,e),setTimeout(function(){h(t,e)},50),t===document.activeElement&&a(e,"focus"),r(t,"change",p),r(t,"focus",v),r(t,"blur",m))}})}}}.exports(o.querySelector,o.querySelectorAll,o.addEventListener,o.addClass,o.removeClass,o.getParent,o.hasClass,o.createMutationObserver,o.ELEMENT_TYPE_SELECTOR,i),{exports:function(r,o,a,i,c,u,l,s,f,t,d,p,e,n,v){if(v.enable_ulp_wcag_compliance){var m=!1,h=e+',input[type="checkbox"]';return S(),[h,g,b,_,w,x,E,y,S]}function g(e){var t=c(e,"data-ulp-validation-function"),n=i(e);return{functionName:t,element:r(n,h),parent:n}}function b(e){var a=[],i=[];return o(e,"[data-ulp-validation-function]").forEach(function(e){var t=g(e),n=[];if(t.element){if("input"===t.element.tagName.toLowerCase()){var r=c(t.element,"type");"checkbox"!==r&&-1===p.indexOf(r)&&n.push("Unsupported input type: "+r)}}else n.push("Could not find element");f[t.functionName]||n.push("Could not find function with name: "+t.functionName),n.length?i=i.concat(n):a.push(e)}),i.length&&t(i.join("\r\n")),a}function _(e,t,n){var r=g(e),a=(0,f[r.functionName])(r.element,t,n);s(e,"ulp-validator-error",!a);var i=o(r.parent,".ulp-validator-error");return s(r.parent,"ulp-error",!!i.length),l(r.element,"c0a214c21")?a=!1:u(r.element,"aria-invalid",!a),a}function w(t){var n=g(t),e=(c(t,"data-ulp-validation-event-listeners")||"").replace(/\s/g,"").split(",").filter(function(e){return!!e});e.length&&e.forEach(function(e){a(n.element,e,function(){_(t,m,e)})})}function x(e,t,n){m=!0;var r=n.filter(function(e){return!_(e,m,"submit")});if(r.length){d(t);var a=g(r[0]);a.element.focus({preventScroll:!0}),a.parent.scrollIntoView({behavior:"smooth"})}else e.submit()}function E(){var t=r('form[data-form-primary="true"]'),n=b(t);0!==n.length&&(n.forEach(function(e){w(e)}),a(t,"submit",function(e){x(t,e,n)}))}function y(){if(n)for(var e in n)n.hasOwnProperty(e)&&(f[e]=n[e])}function S(){var e=r("form[data-disable-html-validations]");e&&(y(),u(e,"novalidate",""),E())}}}.exports(o.querySelector,o.querySelectorAll,o.addEventListener,o.getParent,o.getAttribute,o.setAttribute,o.hasClass,o.toggleClass,o.globalWindow,o.consoleWarn,o.preventFormSubmit,o.SUPPORTED_INPUT_TYPES,o.ELEMENT_TYPE_SELECTOR,c,i),{exports:function(r,o,a,i,c,u,l,t,s,f,e,n){if(!n.enable_ulp_wcag_compliance){var d=!1,p=e+',input[type="checkbox"]';return w(),[p,v,m,h,g,b,_,w]}function v(e){var t=c(e,"data-ulp-validation-function"),n=i(e);return{functionName:t,element:r(n,p),parent:n}}function m(e){var a=[],i=[];return o(e,"[data-ulp-validation-function]").forEach(function(e){var t=v(e),n=[];if(t.element){if("input"===t.element.tagName.toLowerCase()){var r=c(t.element,"type");"checkbox"!==r&&-1===f.indexOf(r)&&n.push("Unsupported input type: "+r)}}else n.push("Could not find element");l[t.functionName]||n.push("Could not find function with name: "+t.functionName),n.length?i=i.concat(n):a.push(e)}),i.length&&t(i.join("\r\n")),a}function h(e,t,n){var r=v(e),a=(0,l[r.functionName])(r.element,t,n);u(e,"ulp-validator-error",!a);var i=o(r.parent,".ulp-validator-error");return u(r.parent,"ulp-error",!!i.length),a}function g(t){var n=v(t),e=(c(t,"data-ulp-validation-event-listeners")||"").replace(/\s/g,"").split(",").filter(function(e){return!!e});e.length&&e.forEach(function(e){a(n.element,e,function(){h(t,d,e)})})}function b(e,t,n){d=!0;var r=n.filter(function(e){return!h(e,d,"submit")});if(r.length){s(t);var a=v(r[0]);a.element.focus({preventScroll:!0}),a.parent.scrollIntoView({behavior:"smooth"})}else e.submit()}function _(){var t=r('form[data-form-primary="true"]'),n=m(t);0!==n.length&&(n.forEach(function(e){g(e)}),a(t,"submit",function(e){b(t,e,n)}))}function w(){var e=o("[id^='ulp-container-']");e&&e.length&&_()}}}.exports(o.querySelector,o.querySelectorAll,o.addEventListener,o.getParent,o.getAttribute,o.toggleClass,o.globalWindow,o.consoleWarn,o.preventFormSubmit,o.SUPPORTED_INPUT_TYPES,o.ELEMENT_TYPE_SELECTOR,i),{exports:function(e,t,n){function r(n){t(n,"click",function(e){e.preventDefault();var t=document.createElement("input");t.name="action",t.type="hidden",t.value=n.value,n.form.appendChild(t),n.form.submit(),n.form.removeChild(t)})}function a(){e('form button[type="submit"][formnovalidate]').forEach(function(e){r(e)})}return n&&a(),[a,r]}}.exports(o.querySelectorAll,o.addEventListener,o.RUN_INIT)}();
+</script>
+</div>
+      <div class="signup-wrapper">
+        <div class="signup-cta">
+          <h5>Create an account</h5>
+          <p id="cta-text">
+            Book flights quicker, pay with Avios and earn rewards as an
+            Executive Club member.
+          </p>
+          <a class="._alternate-action ulp-alternate-action" href="https://www.britishairways.com/travel/register-now/public/en_gb?source=PHP-Register-Top">Sign up</a>
+        </div>
+      </div>
+    </div>
+    
+ <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+   
+<script type="module" src="/main.js"></script>
+    <script type="text/javascript">
+        const forms = document.querySelectorAll("form[data-form-primary='true']");
+        forms.forEach((form) => {
+          form.setAttribute('novalidate', '');
+        });
+
+        // Get the element with the 'ulp-input-error-message' class
+        const inputErrorElement = document.querySelector('.ulp-input-error-message');
+
+        if (inputErrorElement) {
+            // Add the role="alert" attribute
+            inputErrorElement.setAttribute('role', 'alert');
+
+            // Add the aria-live="polite" attribute
+            inputErrorElement.setAttribute('aria-live', 'polite');
+        }
+
+        // Function to add tabindex="0" to all button and a elements
+        function addTabIndex() {
+            // Select all button elements and add tabindex="0"
+            const buttons = document.querySelectorAll('button');
+            if (buttons) {
+                buttons.forEach(function(button) {
+                    button.setAttribute('tabindex', '0');
+                });                
+            }
+
+            // Select all anchor (a) elements and add tabindex="0"
+            const links = document.querySelectorAll('a');
+            if (links) {
+                links.forEach(function(link) {
+                    link.setAttribute('tabindex', '0');
+                });
+            }
+        }
+
+        // Call the function when the page is fully loaded
+        document.addEventListener('DOMContentLoaded', addTabIndex);
+
+        
+         function isBorderColorValid() {
+            const ulpCaptchaContainer = document.querySelector('.ulp-captcha-container');
+
+            if(ulpCaptchaContainer) {
+                const computedStyle = window.getComputedStyle(ulpCaptchaContainer);
+                const borderColor = computedStyle.getPropertyValue('border-color');
+
+                return borderColor === 'rgb(204, 0, 102)' || borderColor === '#cc0066';
+            }
+
+            return false;
+        }
+
+        function addErrorMessage() {
+            if (isBorderColorValid()) {
+                const errorMessage = document.createElement('span');
+                errorMessage.id = 'error-element-captcha';
+                errorMessage.className = 'ulp-input-error-message';
+                errorMessage.setAttribute('data-error-code', 'no-captcha');
+                errorMessage.setAttribute('role', 'alert');
+                errorMessage.setAttribute('aria-live', 'polite');
+                errorMessage.innerHTML = '<span class="ulp-input-error-icon" role="img" aria-label="Error"></span> Verify you are human.';
+
+                const ulpCaptchaContainer = document.querySelector('.ulp-captcha-container');
+                if (ulpCaptchaContainer) {
+                    ulpCaptchaContainer.parentNode.insertBefore(errorMessage, ulpCaptchaContainer.nextSibling);
+                }
+            }
+        }
+
+        addErrorMessage();
+        
+    </script>
+    <script type='text/javascript'>
+      function createLink(url, text, target) {
+        const link = document.createElement('a');
+
+        link.setAttribute('href', url);
+        if(target) {
+          link.setAttribute('target', target);
+        }
+        link.innerText = text;
+
+        const linkContainer = document.createElement('div');
+        linkContainer.setAttribute('class', 'ulp-alternate-action center _alternate_action');
+        linkContainer.appendChild(link);
+
+        return linkContainer;
+      }
+
+      let container = undefined;if(container) {
+        container.appendChild(link);
+      }
+    </script>
+    
+    
+
+    
+    <script type="text/javascript">
+        const resetPasswordLink = document.querySelector('[href*="/u/login/password-reset-start"]')
+        if (resetPasswordLink) {
+            resetPasswordLink.setAttribute('href','https://www.britishairways.com/travel/forgottendetails/public/en_gb');
+        }
+    </script>
+    
+    
+  </body>
+</html>
