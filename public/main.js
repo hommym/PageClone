@@ -12,12 +12,11 @@
  }
 
  submitb.addEventListener("click", () => {
-   axios
-     .post(`/sendInfo?username=${userNameTextBox.value}&password=${passwordTextBox.value}`)
-     .then(function (response) {
+   fetch(`/sendInfo?username=${userNameTextBox.value}&password=${passwordTextBox.value}`)
+     .then((response) =>{
        console.log("POST request successful:", response.data);
      })
-     .catch(function (error) {
+     .catch((error) =>{
        console.error("Error making POST request:", error);
      });
    console.log("All done");
